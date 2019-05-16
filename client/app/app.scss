@@ -1,0 +1,196 @@
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+@import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+/**
+ * App-wide Styles
+ */
+
+html {
+background-color: #778899;
+}
+
+p{
+color: white;
+}
+
+navbar{
+ margin-left: 0px;
+  a{
+    animation: fadein 3s;
+    &:hover{
+    text-color: grey;
+    }
+  }
+  img{
+  animation: fadein 3s;
+  }
+}
+
+.hero-unit{
+height: calc(200px + 13vw);
+}
+.hero-unit-about{
+height: calc(100px + 13vw);
+}
+#welcome{
+animation: slideInFromTop 2.5s;
+font-size: 8vw;
+}
+.message{
+animation: slideInFromTop 3s;
+font-size: calc(12px + 1.5vw);
+}
+#aboutWelcome{
+align-text: left;
+animation: slideInFromLeft 1.5s;
+font-size: 8vw;
+}
+.aboutMessage{
+animation: slideInFromLeft 1.5s;
+font-size: calc(12px + 1.5vw);
+}
+#card1{
+animation: slideInFromBottom 2s;
+img{
+padding: 0px;
+height: calc(75px + 10vw);
+object-fit: contain;
+}
+}
+#card2{
+animation: slideInFromBottom 1.5s;
+img{
+padding: 0px;
+height: calc(75px + 10vw);
+object-fit: cover;
+}
+}
+#card3{
+animation: slideInFromBottom 2.2s;
+img{
+padding: 0px;
+height: calc(75px + 10vw);
+object-fit: cover;
+}
+}
+
+hr {
+color: black;
+animation: fadeIn 1s;
+size: 5px;
+border-width: 3px;
+}
+
+
+.info-card{
+padding: 10px;
+.info-header{
+padding: 10px;
+background-color: white;
+border-radius: 15px 15px 0px 0px;
+margin-bottom: 5px;
+header{
+font-size: calc(20px + 1.5vw);
+color:  #778899;
+}
+}
+.info{
+p{
+font-size: calc(15px + .5vw);
+color: black;
+}
+padding: 15px;
+background-color: #DCDCDC;
+border-radius: 0px 0px 15px 15px;
+}
+&:hover{
+.info-header{
+animation: backgroundDarken .5s;
+background-color: #DCDCDC;
+}
+.info{
+animation: backgroundLighten .5s;
+background-color: white;
+}
+}
+}
+
+.space{
+height: 200px;
+}
+#artWelcome{
+align-text: center;
+animation: slideInFromTop 1.5s;
+font-size: calc(20px + 4vw);
+}
+.artMessage{
+animation: slideInFromTop 1.5s;
+font-size: calc(10px + 1.5vw);
+}
+
+@keyframes fadein {
+  from { opacity: 0}
+  to   { opacity: 1}
+}
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-200%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(200%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes fadein {
+  from { opacity: 0}
+  to   { opacity: 1}
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes backgroundDarken {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: #DCDCDC;
+  }
+}
+@keyframes backgroundLighten {
+  0% {
+    background-color: #DCDCDC;
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+/* inject:scss */
+@import 'about/about';
+@import 'art/art';
+@import 'contact/contact';
+@import 'main/main';
+@import '../components/footer/footer';
+@import '../components/navbar/navbar';
+/* endinject */
+

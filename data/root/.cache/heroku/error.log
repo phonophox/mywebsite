@@ -1,0 +1,13 @@
+2019-05-16T23:20:17.255Z Warning: Cannot open browser. Go to https://cli-auth.heroku.com/auth/browser/0ead3dfb-42e1-4647-a5db-4d8b68e235e7 to finish login or run heroku login --interactive
+2019-05-16T23:20:17.255Z
+2019-05-16T23:20:17.255Z     at Object.warn (/usr/local/lib/node_modules/heroku/node_modules/@oclif/errors/lib/index.js:33:15)
+2019-05-16T23:20:17.255Z     at showUrl (/usr/local/lib/node_modules/heroku/node_modules/@heroku-cli/command/lib/login.js:132:34)
+2019-05-16T23:20:17.255Z     at ChildProcess.cp.on.code (/usr/local/lib/node_modules/heroku/node_modules/@heroku-cli/command/lib/login.js:145:17)
+2019-05-16T23:20:17.255Z     at emitTwo (events.js:126:13)
+2019-05-16T23:20:17.255Z     at ChildProcess.emit (events.js:214:7)
+2019-05-16T23:20:17.255Z     at maybeClose (internal/child_process.js:915:16)
+2019-05-16T23:20:17.255Z     at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
+2019-05-16T23:20:36.407Z Error: You do not have permission to view on mywebsite. You need to have the view permission on this app.
+2019-05-16T23:20:36.407Z Error ID: forbidden
+2019-05-16T23:20:36.407Z     at Function.request (/usr/local/lib/node_modules/heroku/node_modules/@heroku-cli/command/lib/api-client.js:93:27)
+2019-05-16T23:20:36.407Z     at <anonymous>

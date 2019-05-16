@@ -1,0 +1,52 @@
+.aboutInfoBlock{
+height: calc(650px - 10vw);
+padding: 15px;
+.aboutInfoCol{
+
+p{
+color: black;
+}
+padding: 10px;
+padding-left: 15px;
+padding-right: 0px;
+border-radius: 20px 0px 0px 20px;
+background-color: white;
+}
+.aboutInfo{
+border-radius: 0px 20px 20px 0px;
+background-color: white;
+p{
+color: black;
+}
+animation: fadein 1s;
+}
+}
+.titleBlock{
+padding-top: 1vw;
+img{
+border-width: 1px 0px 1px 0px;
+border-style: solid;
+padding: 0px;
+object-fit: cover;
+opacity: .5;
+}
+p{
+opacity: .5;
+}
+border-right: solid #778899;
+background-color: #DCDCDC;
+animation: backgroundDarken .5s;
+}
+.selected{
+img{
+opacity: 1;
+}
+p{
+opacity: 1;
+}
+animation: backgroundLighten .5s;
+opacity: 1;
+padding-top: 1vw;
+background-color: white;
+border-right: solid white;
+}

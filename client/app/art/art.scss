@@ -1,0 +1,100 @@
+.artBoard{
+position:relative;
+h1{
+color: white;
+}
+.picture{
+padding:10px;
+
+.notExpanded{
+padding: 0px;
+margin-top: 10px;
+width: 100%;
+height: 200px;
+object-fit: cover;
+opacity: 1;
+border-radius: 10px;
+box-shadow: 0px 0px 5px black;
+&:hover{
+animation: fade .5s;
+opacity: .6;
+}
+}
+}
+}
+.foxIcon{
+height: 30vw;
+object-fit: contain;
+&:hover{
+animation: fade .5s;
+opacity: .6;
+}
+}
+.expandedIcons{
+background-color: white;
+border-radius: 10px;
+margin: auto;
+margin-top: 0px;
+width: 100%;
+height: 90%;
+object-fit: scale-down;
+animation: grow 1s;
+animation: slideInFromTop 1s;
+}
+.myIcons{
+margin-top: 15px;
+padding-top: 10px;
+padding-bottom: 10px;
+background-color: white;
+border-radius: 10px;
+box-shadow: 0px 0px 5px black;
+&:hover{
+animation: fade .5s;
+opacity: .6;
+}
+}
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .6;
+  }
+}
+.expandedPic{
+margin: auto;
+margin-top: 0px;
+width: 90%;
+height: 90%;
+object-fit: scale-down;
+animation: grow 1s;
+animation: slideInFromTop 1s;
+
+}
+
+@keyframes grow {
+  0% {
+    height: 200px;
+  }
+  100% {
+    height: 90%;
+  }
+}
+.blackBackground{
+background-color: black;
+opacity: .5;
+height: 100%;
+width: 100%;
+z-index: 0;
+}
+.picInfo{
+background-color: black;
+margin: auto;
+animation: slideInFromBottom 2s;
+width: 90%;
+height: 10%;
+h2{
+margin-top: 0px;
+color: white;
+}
+}

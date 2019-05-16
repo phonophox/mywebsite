@@ -1,0 +1,79 @@
+<navbar></navbar>
+
+<div class="hero-unit-about col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <p id="aboutWelcome" class="text-left font-weight-light">What makes this tick.</p>
+  <p class="aboutMessage text-left font-weight-light">I've created this website using the MEAN stack. Here is some information about that stack.</p>
+</div>
+
+<div class="aboutInfoBlock col-lg-12 col-md-12 col-sm-12 col-xs-12">
+       <div class="aboutInfoCol h-100 col-lg-2 col-md-2 col-sm-3 col-xs-3 d-flex flex-column">
+         <div ng-class="{'selected': aboutController.selected1}" ng-click= "aboutController.switchSelected(1)" class="titleBlock h-25 w-100 text-center">
+           <img class="h-50 col-lg-12 col-md-12 col-sm-12 col-xs-12" src="../../assets/images/mongodb-logo.png"><p class="font-weight-light">Mongo</p>
+         </div>
+         <div ng-class="{'selected': aboutController.selected2}" ng-click= "aboutController.switchSelected(2)" class="titleBlock align-center h-25 w-100 text-center">
+           <img class="h-50 col-lg-12 col-md-12 col-sm-12 col-xs-12" src="../../assets/images/express-logo.png"><p class="font-weight-light">Express</p>
+         </div>
+         <div ng-class="{'selected': aboutController.selected3}" ng-click= "aboutController.switchSelected(3)" class="titleBlock align-center h-25 w-100 text-center">
+           <img class="h-50 col-lg-12 col-md-12 col-sm-12 col-xs-12" src="../../assets/images/angular-icon-1.svg"><p class="font-weight-light">Angular</p>
+         </div>
+         <div ng-class="{'selected': aboutController.selected4}" ng-click= "aboutController.switchSelected(4)" class="titleBlock align-center h-25 w-100 text-center">
+           <img class="h-50 col-lg-12 col-md-12 col-sm-12 col-xs-12" src="../../assets/images/nodejs-icon.svg"><p class="font-weight-light">Node</p>
+         </div>
+       </div>
+       <div class="aboutInfo h-100 col-lg-10 col-md-10 col-sm-9 col-xs-9 d-flex flex-column">
+        <div ng-if="aboutController.selected1" class=" h-100 info info1">
+          <h1 class="text-left font-weight-light">Mongo</h1>
+          <p class="font-weight-light">MongoDB is a document database with the scalability and flexibility that still provides you want with powerful querying and indexing.</p>
+          <p class="font-weight-light">I use it to store and retrieve my artwork.</p>
+          <p>More Information:</p>
+          <a href="https://www.mongodb.com/what-is-mongodb">https://www.mongodb.com/what-is-mongodb</a>
+          <br>
+          <iframe class="h-50 col-lg-7 col-md-10 hidden-sm hidden-xs"
+                  src="https://www.youtube.com/embed/CvIr-2lMLsk">
+          </iframe>
+          <a class="hidden-lg hidden-md col-sm-12 col-xs-12" href="https://www.youtube.com/watch?v=CvIr-2lMLsk">https://www.youtube.com/watch?v=CvIr-2lMLsk</a>
+        </div>
+         <div ng-if="aboutController.selected2" class="h-100 info info2">
+           <h1 class="text-left font-weight-light">Express</h1>
+           <p class="font-weight-light">Express is a light-weight web application framework to help organize your web application into an MVC architecture on the server side.</p>
+           <p class="font-weight-light">I use it to communicate with my Mongo backend.</p>
+           <p>More Information:</p>
+           <a href="https://expressjs.com/">https://expressjs.com/</a>
+           <br>
+           <iframe class="h-50 col-lg-7 col-md-10 hidden-sm hidden-xs"
+                   src="https://www.youtube.com/embed/45dAt9Gz8rE">
+           </iframe>
+           <a class="hidden-lg hidden-md col-sm-12 col-xs-12" href="https://www.youtube.com/watch?v=45dAt9Gz8rE">https://www.youtube.com/watch?v=45dAt9Gz8rE</a>
+         </div>
+         <div ng-if="aboutController.selected3" class="h-100 info info3">
+           <h1 class="text-left font-weight-light">AngularJS</h1>
+           <p class="font-weight-light">AngularJS is a framework for working with HTML in javascript. It helps add dynamic and responsive content through data-binding, and it works well with other libraries that I use, such as Bootstrap.</p>
+           <p class="font-weight-light">I use it to create the dynamic aspects of this site, such as the tab view on the left of this component.</p>
+           <p>More Information:</p>
+           <a class="col-lg-12 col-md-12 col-sm-12 col-xs-12" href="https://angularjs.org/">https://angularjs.org/</a>
+           <br>
+           <iframe class="h-50 col-lg-7 col-md-10 hidden-sm hidden-xs"
+                   src="https://www.youtube.com/embed/zKkUN-mJtPQ">
+           </iframe>
+           <a class="hidden-lg hidden-md col-sm-12 col-xs-12" href="https://www.youtube.com/watch?v=zKkUN-mJtPQ">https://www.youtube.com/watch?v=zKkUN-mJtPQ</a>
+         </div>
+         <div ng-if="aboutController.selected4" class="h-100 info info4">
+           <h1 class="text-left font-weight-light">NodeJS</h1>
+           <p class="font-weight-light">Node.js is an open-source, cross-platform JavaScript run-time environment that executes JavaScript code outside of a browser.</p>
+           <p class="font-weight-light">I use it to construct the application, and interact with Express and Angular.</p>
+           <p>More Information:</p>
+           <a class="col-lg-12 col-md-12 col-sm-12 col-xs-12" href="https://nodejs.org/en/about/">https://nodejs.org/en/about/</a>
+           <br>
+           <iframe class="h-50 col-lg-7 col-md-10 hidden-sm hidden-xs"
+                   src="https://www.youtube.com/embed/uVwtVBpw7RQ">
+           </iframe>
+           <a class="hidden-lg hidden-md col-sm-12 col-xs-12" href="https://www.youtube.com/watch?v=uVwtVBpw7RQ">https://www.youtube.com/watch?v=uVwtVBpw7RQ</a>
+         </div>
+
+      </div>
+</div>
+
+
+<footer></footer>
+
+
