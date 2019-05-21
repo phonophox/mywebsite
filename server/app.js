@@ -2,8 +2,9 @@
 
 'use strict';
 
-import express from 'express';
+
 import mongoose from 'mongoose';
+import express from 'express';
 mongoose.Promise = require('bluebird');
 import config from './config/environment';
 import http from 'http';
