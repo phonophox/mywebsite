@@ -6,7 +6,10 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
  */
 
 html {
-background-color: #778899;
+background-image: radial-gradient( Lavender 50%, LightSteelBlue);
+}
+body{
+margin-bottom: 50px;
 }
 
 p{
@@ -28,51 +31,34 @@ navbar{
 
 .hero-unit{
 height: calc(200px + 13vw);
+
 }
 .hero-unit-about{
 height: calc(100px + 13vw);
 }
-#welcome{
-animation: slideInFromTop 2.5s;
-font-size: 8vw;
-}
+
 .message{
 animation: slideInFromTop 3s;
 font-size: calc(12px + 1.5vw);
 }
 #aboutWelcome{
+color: MidnightBlue;
 align-text: left;
 animation: slideInFromLeft 1.5s;
-font-size: 8vw;
+font-size: 6vw;
+font-family: 'Karla', sans-serif;
+padding-left: calc(0px + 5vw);
+padding-right: calc(0px + 5vw);
 }
 .aboutMessage{
 animation: slideInFromLeft 1.5s;
+color: MidnightBlue;
+font-family: 'Lato', sans-serif;
 font-size: calc(12px + 1.5vw);
+padding-left: calc(0px + 5vw);
+padding-right: calc(0px + 5vw);
 }
-#card1{
-animation: slideInFromBottom 2s;
-img{
-padding: 0px;
-height: calc(75px + 10vw);
-object-fit: contain;
-}
-}
-#card2{
-animation: slideInFromBottom 1.5s;
-img{
-padding: 0px;
-height: calc(75px + 10vw);
-object-fit: cover;
-}
-}
-#card3{
-animation: slideInFromBottom 2.2s;
-img{
-padding: 0px;
-height: calc(75px + 10vw);
-object-fit: cover;
-}
-}
+
 
 hr {
 color: black;
@@ -82,48 +68,21 @@ border-width: 3px;
 }
 
 
-.info-card{
-padding: 10px;
-.info-header{
-padding: 10px;
-background-color: white;
-border-radius: 15px 15px 0px 0px;
-margin-bottom: 5px;
-header{
-font-size: calc(20px + 1.5vw);
-color:  #778899;
-}
-}
-.info{
-p{
-font-size: calc(15px + .5vw);
-color: black;
-}
-padding: 15px;
-background-color: #DCDCDC;
-border-radius: 0px 0px 15px 15px;
-}
-&:hover{
-.info-header{
-animation: backgroundDarken .5s;
-background-color: #DCDCDC;
-}
-.info{
-animation: backgroundLighten .5s;
-background-color: white;
-}
-}
-}
+
 
 .space{
 height: 200px;
 }
 #artWelcome{
+color: MidnightBlue;
+font-family: 'Karla', sans-serif;
 align-text: center;
 animation: slideInFromTop 1.5s;
 font-size: calc(20px + 4vw);
 }
 .artMessage{
+color: MidnightBlue;
+font-family: 'Lato', sans-serif;
 animation: slideInFromTop 1.5s;
 font-size: calc(10px + 1.5vw);
 }
@@ -184,13 +143,18 @@ font-size: calc(10px + 1.5vw);
     background-color: white;
   }
 }
+@font-face {
+    font-family: DeliciousRoman;
+    src: url(http://www.font-face.com/fonts/delicious/Delicious-Roman.otf);
+    font-weight:400;
+}
 
 /* inject:scss */
 @import 'about/about';
 @import 'art/art';
 @import 'contact/contact';
 @import 'main/main';
-@import '../components/footer/footer';
+@import '../components/customFooter/customFooter';
 @import '../components/navbar/navbar';
 /* endinject */
 

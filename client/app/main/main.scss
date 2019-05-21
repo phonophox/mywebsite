@@ -1,3 +1,88 @@
+.hero-unit{
+margin-bottom: 20px;
+border-radius: 5px;
+p{
+color: MidnightBlue	;
+font-family: 'Lato', sans-serif;
+}
+background-image: linear-gradient(to bottom right, PaleTurquoise, #D2B4DE	);
+background-repeat: no-repeat;
+background-size: cover;
+box-shadow: 0px 0px 10px grey;
+}
+.mainBody{
+margin-bottom: 30px;
+padding-bottom: 30px;
+}
+#welcome{
+font-family: 'Karla', sans-serif;
+animation: slideInFromTop 2.5s;
+font-size: 8vw;
+}
+#card1{
+animation: slideInFromBottom 2s;
+img{
+margin-bottom: 10px;
+background-image: radial-gradient(circle, #D4E6F1 70%, #5499C7	);
+padding: 0px;
+height: calc(25px + 15vw);
+object-fit: contain;
+}
+}
+#card2{
+animation: slideInFromBottom 1.5s;
+img{
+margin-bottom: 10px;
+padding: 0px;
+height: calc(25px + 15vw);
+object-fit: cover;
+}
+}
+#card3{
+animation: slideInFromBottom 2.2s;
+img{
+margin-bottom: 10px;
+background-image: radial-gradient(circle, #D1F2EB 70%, #76D7C4);
+padding: 0px;
 
+height: calc(25px + 15vw);
+object-fit: cover;
+}
+}
+.info-card{
 
-
+.info-header{
+padding: 10px;
+background-color: white;
+border-radius: 5px 5px 0px 0px;
+margin-bottom: 5px;
+header{
+font-family: 'Karla', sans-serif;
+font-size: calc(20px + 1.5vw);
+color:  #778899;
+}
+}
+.info{
+padding-bottom: 0px;
+padding-top: 0px;
+p{
+padding:10px;
+padding-bottom: 10px;
+font-size: calc(15px + .5vw);
+color: MidnightBlue;
+}
+background-color: #DCDCDC;
+border-radius: 0px 0px 5px 5px;
+}
+&:hover{
+.info-header{
+font-family: 'Lato', sans-serif;
+animation: backgroundDarken .5s;
+background-color: #DCDCDC;
+}
+.info{
+animation: backgroundLighten .5s;
+background-color: white;
+}
+}
+}

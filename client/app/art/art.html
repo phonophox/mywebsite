@@ -6,10 +6,10 @@
 </div>
 
 <div class="artBoard col-lg-12 col-md-12 col-sm-12 col-xs-12">
-  <h1 class="text-center font-weight-light">Digital</h1>
-  <hr>
-  <div ng-repeat="pic in artController.pics2" class="col-lg-6 col-md-6 col-sm-6 col-xs-6" >
-  <img class="notExpanded"
+  <h1 class="text-center font-weight-light artSectionTitle">Digital</h1>
+  <hr class="artSectionBreak">
+  <div ng-repeat="pic in artController.pics2" class=" col-lg-6 col-md-6 col-sm-6 col-xs-6" >
+  <img class="notExpanded w-100"
        ng-class= "{'fixed-top expandedPic':artController.returnSelected(pic.number), 'notExpanded': !artController.returnSelected(pic.number)}"
        ng-click= "artController.expandPicture(pic.number)"
        src="{{pic.src}}">
@@ -31,7 +31,7 @@
   </div>
 </div>
 <div class="artBoard col-lg-12 col-md-12 col-sm-12 col-xs-12">
-  <h1 class="text-center font-weight-light">Physical</h1>
+  <h1 class="text-center font-weight-light artSectionTitle">Physical</h1>
   <hr>
   <div ng-repeat="pic in artController.pics" class="picture col-lg-3 col-md-4 col-sm-6 col-xs-12" >
     <img class="notExpanded"
@@ -47,5 +47,8 @@
 <div class=" blackBackground fixed-top" ng-if="artController.galleryMode">
 
 </div>
-
-<footer></footer>
+<div class="customFooter sticky-bottom">
+  <div>
+    <footer class="footer-block"><p>Isaac Nelson, 2019 </p></footer>
+  </div>
+</div>

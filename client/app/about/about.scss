@@ -1,23 +1,28 @@
 .aboutInfoBlock{
-height: calc(650px - 10vw);
-padding: 15px;
+
+height: calc(430px + 7vw);
+padding-left: calc(0px + 5vw);
+padding-right: calc(0px + 5vw);
+margin-bottom: calc(20px + 5vw);
+.aboutInfoHeader{
+padding: 5px;
+height: calc(50px + 18vw);
+width: 100%;
+}
 .aboutInfoCol{
 
-p{
-color: black;
-}
 padding: 10px;
 padding-left: 15px;
 padding-right: 0px;
-border-radius: 20px 0px 0px 20px;
+border-radius: 10px 0px 0px 10px;
 background-color: white;
 }
 .aboutInfo{
-border-radius: 0px 20px 20px 0px;
+margin-bottom: 30px;
+padding-top:10px;
+border-radius: 0px 10px 10px 0px;
 background-color: white;
-p{
-color: black;
-}
+overflow: scroll;
 animation: fadein 1s;
 }
 }
@@ -33,7 +38,7 @@ opacity: .5;
 p{
 opacity: .5;
 }
-border-right: solid #778899;
+border-left: solid #778899;
 background-color: #DCDCDC;
 animation: backgroundDarken .5s;
 }
@@ -49,4 +54,19 @@ opacity: 1;
 padding-top: 1vw;
 background-color: white;
 border-right: solid white;
+}
+.aboutInfoText{
+color: MidnightBlue;
+font-family: 'Lato', sans-serif;
+font-size: calc(13px + 1vw);
+}
+.aboutInfoTextTitle{
+color: MidnightBlue;
+padding-left:0px;
+font-size: calc(20px + 5vw);
+font-family: 'Karla', sans-serif;
+}
+.aboutMenuText{
+color: MidnightBlue;
+font-family: 'Karla', sans-serif;
 }

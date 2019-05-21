@@ -4,7 +4,7 @@
 
 import angular from 'angular';
 
-export class FooterComponent {
+export class CustomFooterComponent {
 
 
   /* initialize variables in the constructor*/
@@ -15,8 +15,8 @@ export class FooterComponent {
 
 }
 
-export default angular.module('directives.footer', [])
-  .component('footer', {
-  template: require('./footer.html'),
-  controller: FooterComponent
+export default angular.module('directives.customFooter', [])
+  .component('customFooter', {
+  template: require('./customFooter.html'),
+  controller: CustomFooterComponent
 }).name;

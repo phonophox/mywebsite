@@ -1,11 +1,15 @@
-.footer{
+.customFooter{
 height: 30px;
-background-color:#DCDCDC;
-position:relative;
-margin-top: 40px;
+background-color: white;
+bottom: 0;
+width: 100%;
+position: fixed;
+margin-left:0px;
 p{
+font-family:'Lato',sans-serif;
 padding-top:5px;
+margin-left: 15px;
 margin-bottom: 0px;
-color: black;
+color: MidnightBlue;
 }
 }

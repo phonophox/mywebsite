@@ -1,6 +1,12 @@
 .navbar-logo {
   height: 60px;
 }
+nav{
+a{
+
+font-family: 'Karla', sans-serif;
+}
+}
 
 
 .navbar-default {
@@ -17,16 +23,18 @@
   }
 
   a{
+
     font-size: x-large;
-    font-family: Arial;
+    font-family: 'Karla', sans-serif;
     list-style: none;
     display: block;
     text-align: justify;
   }
 
   .navbar-brand {
+
     padding: 5px 0px;
-    color: white;
+    color: black;
     &:hover, &:focus {
       color: #333;
     }
