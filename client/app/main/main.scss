@@ -1,6 +1,7 @@
 .hero-unit{
 margin-bottom: 20px;
-border-radius: 5px;
+height: calc(100px+3vw);
+padding: 10px;
 p{
 color: MidnightBlue	;
 font-family: 'Lato', sans-serif;
@@ -8,10 +9,11 @@ font-family: 'Lato', sans-serif;
 background-image: linear-gradient(to bottom right, PaleTurquoise, #D2B4DE	);
 background-repeat: no-repeat;
 background-size: cover;
-box-shadow: 0px 0px 10px grey;
 }
 .mainBody{
 margin-bottom: 30px;
+padding-left: 0px;
+padding-right: 0px;
 padding-bottom: 30px;
 }
 #welcome{
@@ -23,7 +25,7 @@ font-size: 8vw;
 animation: slideInFromBottom 2s;
 img{
 margin-bottom: 10px;
-background-image: radial-gradient(circle, #D4E6F1 70%, #5499C7	);
+background-image: radial-gradient(circle at 100%, #D4E6F1 70%, #5499C7	);
 padding: 0px;
 height: calc(25px + 15vw);
 object-fit: contain;
@@ -42,7 +44,7 @@ object-fit: cover;
 animation: slideInFromBottom 2.2s;
 img{
 margin-bottom: 10px;
-background-image: radial-gradient(circle, #D1F2EB 70%, #76D7C4);
+background-image: radial-gradient(circle at 0%, #D1F2EB 70%, #76D7C4);
 padding: 0px;
 
 height: calc(25px + 15vw);
@@ -85,4 +87,7 @@ animation: backgroundLighten .5s;
 background-color: white;
 }
 }
+}
+#mainNavbar{
+margin-bottom: 0px;
 }

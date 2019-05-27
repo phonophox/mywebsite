@@ -30,7 +30,7 @@ navbar{
 }
 
 .hero-unit{
-height: calc(200px + 13vw);
+height: calc(100px + 18vw);
 
 }
 .hero-unit-about{
@@ -85,6 +85,9 @@ color: MidnightBlue;
 font-family: 'Lato', sans-serif;
 animation: slideInFromTop 1.5s;
 font-size: calc(10px + 1.5vw);
+}
+.footer-block{
+font-size: calc(4px+4vw);
 }
 
 @keyframes fadein {
