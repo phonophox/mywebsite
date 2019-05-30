@@ -1,10 +1,10 @@
+main{
 .hero-unit{
+position: relative;
 margin-bottom: 20px;
-height: calc(100px+3vw);
-padding: 10px;
+min-height: calc(160px + 10vw);
 p{
 color: MidnightBlue	;
-font-family: 'Lato', sans-serif;
 }
 background-image: linear-gradient(to bottom right, PaleTurquoise, #D2B4DE	);
 background-repeat: no-repeat;
@@ -19,39 +19,40 @@ padding-bottom: 30px;
 #welcome{
 font-family: 'Karla', sans-serif;
 animation: slideInFromTop 2.5s;
-font-size: 8vw;
+font-size: calc(15px + 4vw);
+opacity: 1;
+}
+.message{
+font-family: 'Lato', sans-serif;
+animation: slideInFromTop 2s;
+font-size: calc(15px + 1vw);
 }
 #card1{
 animation: slideInFromBottom 2s;
 img{
-margin-bottom: 10px;
 background-image: radial-gradient(circle at 100%, #D4E6F1 70%, #5499C7	);
-padding: 0px;
-height: calc(25px + 15vw);
-object-fit: contain;
 }
 }
+
 #card2{
 animation: slideInFromBottom 1.5s;
-img{
-margin-bottom: 10px;
-padding: 0px;
-height: calc(25px + 15vw);
-object-fit: cover;
 }
-}
+
 #card3{
 animation: slideInFromBottom 2.2s;
 img{
-margin-bottom: 10px;
 background-image: radial-gradient(circle at 0%, #D1F2EB 70%, #76D7C4);
-padding: 0px;
+}
+}
 
+
+.info-card{
+img{
+margin-bottom: 10px;
+padding: 0px;
 height: calc(25px + 15vw);
 object-fit: cover;
 }
-}
-.info-card{
 
 .info-header{
 padding: 10px;
@@ -69,25 +70,99 @@ padding-bottom: 0px;
 padding-top: 0px;
 p{
 padding:10px;
-padding-bottom: 10px;
 font-size: calc(15px + .5vw);
 color: MidnightBlue;
 }
 background-color: #DCDCDC;
 border-radius: 0px 0px 5px 5px;
 }
-&:hover{
-.info-header{
-font-family: 'Lato', sans-serif;
-animation: backgroundDarken .5s;
-background-color: #DCDCDC;
-}
-.info{
-animation: backgroundLighten .5s;
-background-color: white;
-}
-}
+
+
+
+
 }
 #mainNavbar{
 margin-bottom: 0px;
+}
+
+.hovered-element{
+
+    .info-header{
+      animation: hoverPadding .5s, backgroundDarken 1s;
+      background-color: #DCDCDC;
+      padding: 5px;
+    }
+
+  .info{
+    img{
+      animation: hoverAnimation .5s;
+      height: calc(40px + 15vw);
+    }
+    p{
+      animation: hoverPadding .5s, backgroundLighten .5s;
+      background-color: white;
+      padding: 5px;
+    }
+  }
+}
+
+.leftElement{
+    .info-header{
+      animation: leftPadding .5s, backgroundLighten 1s;
+      background-color: white;
+      padding: 10px;
+    }
+  .info{
+    img{
+      animation: leftAnimation .5s ease-out;
+      height: calc(25px + 15vw);
+    }
+    p{
+          animation: leftPadding .5s, backgroundDarken .5s ease-out;
+          background-color: #DCDCDC;
+          padding: 10px;
+        }
+  }
+}
+.background2{
+min-height: calc(160px + 10vw);
+background-image: linear-gradient(to bottom right, #D2B4DE, PaleTurquoise	);
+background-repeat: no-repeat;
+background-size: cover;
+opacity: 0;
+animation: constantHeader 8s;
+animation-iteration-count: infinite;
+
+}
+#heroText{
+left: 2%;
+right: 2%;
+top: 0;
+position: absolute;
+opacity: 1;
+}
+}
+@keyframes hoverAnimation {
+  from { height: calc(25px + 15vw);}
+  to   { height: calc(40px + 15vw);}
+}
+@keyframes hoverPadding {
+  from { padding: 10px;}
+  to   { padding: 5px;}
+}
+@keyframes leftPadding {
+  from { padding: 5px;}
+  to   { padding: 10px;}
+}
+
+@keyframes leftAnimation {
+  from { height: calc(40px + 15vw);}
+  to   { height: calc(25px + 15vw);}
+}
+
+@keyframes constantHeader{
+0% {opacity: 0}
+50% {opacity:1}
+100% {opacity:0}
+
 }

@@ -8,6 +8,8 @@ export class ArtController {
   constructor($http) {
     this.$http = $http;
     this.load = false;
+        this.hovered = [false,false,false,false,false,false,false,false,false,false,false,false];
+        this.visited = [false,false,false,false,false,false,false,false,false,false,false,false];
     this.galleryMode = false;
     this.selectedPic =0;
     this.pics=[
@@ -36,12 +38,18 @@ export class ArtController {
     {src:"../../assets/images/myLogoNegative.svg", number:15, expanded:false, title:"Modern Fox Icon", materials: "Digital, Illustrator"},
     ];
   }
-
+  hover(value){
+    this.hovered[value]=true;
+    this.visited[value]=true;
+    console.log(this.hovered);
+   }
+  noHover(value){
+      this.hovered[value]=false;
+  }
   $onInit() {
   this.load = true;
   }
   expandPicture(value){
-  console.log(value);
   if(this.galleryMode == true){
   this.galleryMode = false;
   this.selectedPic =0;
@@ -50,12 +58,9 @@ export class ArtController {
   this.galleryMode = true;
   this.selectedPic = value;
   }
-  console.log("selected: "+this.selectedPic);
   }
   returnSelected(value){
-  console.log(value);
   if(this.selectedPic==value){
-  console.log("return selected true");
   return true;
   }
   else{

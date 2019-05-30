@@ -8,7 +8,9 @@ nav{
 margin-bottom: 0px;
 a{
 
+font-size: large;
 font-family: 'Karla', sans-serif;
+
 }
 }
 
@@ -36,7 +38,7 @@ font-family: 'Karla', sans-serif;
   }
 
   .navbar-brand {
-
+    margin-right: 0px;
     padding: 5px 0px;
     color: black;
     &:hover, &:focus {

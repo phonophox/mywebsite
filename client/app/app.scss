@@ -29,18 +29,6 @@ navbar{
   }
 }
 
-.hero-unit{
-height: calc(100px + 18vw);
-
-}
-.hero-unit-about{
-height: calc(100px + 13vw);
-}
-
-.message{
-animation: slideInFromTop 3s;
-font-size: calc(12px + 1.5vw);
-}
 #aboutWelcome{
 color: MidnightBlue;
 align-text: left;
@@ -93,6 +81,14 @@ font-size: calc(4px+4vw);
 @keyframes fadein {
   from { opacity: 0}
   to   { opacity: 1}
+}
+@keyframes opacityUp {
+  0% {
+  background-color: rgba(255,255,255,.9);
+  }
+  100% {
+  background-color: rgba(255,255,255,1);
+  }
 }
 @keyframes slideInFromTop {
   0% {

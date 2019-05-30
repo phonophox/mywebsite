@@ -1,3 +1,4 @@
+art{
 .artSectionTitle{
 font-family: "Karla", sans-serif;
 color: MidnightBlue;
@@ -12,21 +13,15 @@ color: #6633CC;
 position:relative;
 
 .picture{
-padding:10px;
-
-.notExpanded{
-padding: 0px;
-margin-top: 10px;
-width: 100%;
+padding: 10px;
 height: 200px;
+.notExpanded{
+width: 100%;
+height: 100%;
 object-fit: cover;
 opacity: 1;
 border-radius: 10px;
 box-shadow: 0px 0px 5px black;
-&:hover{
-animation: fade .5s;
-opacity: .6;
-}
 }
 }
 }
@@ -110,8 +105,35 @@ font-size: calc(15px + 3vw);
 color: white;
 }
 }
-art{
+.hoverContainer{
+height: 180px;
+padding: 10px;
+}
+.hovered-element{
+
+   animation: arthoverPadding .5s;
+   padding: 0px;
+
+}
+
+.leftElement{
+
+  animation: artleftPadding .5s;
+  padding: 10px;
+
+}
+
 .customFooter{
 margin-top: 30px;
 }
+
+
+}
+@keyframes arthoverPadding {
+  from { padding: 10px;}
+  to   { padding: 0px;}
+}
+@keyframes artleftPadding {
+  from { padding: 0px;}
+  to   { padding: 10px;}
 }

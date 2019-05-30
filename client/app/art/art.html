@@ -30,16 +30,19 @@
     <h2 class="font-weight-light">Icon Designs, Digital, Illustrator</h2>
   </div>
 </div>
-<div class="artBoard col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div ngController="ArtController" class="artBoard col-lg-12 col-md-12 col-sm-12 col-xs-12">
   <h1 class="text-center font-weight-light artSectionTitle">Physical</h1>
   <hr>
   <div ng-repeat="pic in artController.pics" class="picture col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+    <div class="hoverContainer" ng-class="{'leftElement': artController.visited[pic.number]&&!artController.hovered[pic.number], 'hovered-element': artController.hovered[pic.number]}" ng-mouseenter="artController.hover(pic.number)" ng-mouseleave="artController.noHover(pic.number)">
+
     <img class="notExpanded"
       ng-class= "{'fixed-top expandedPic':artController.returnSelected(pic.number), 'notExpanded': !artController.returnSelected(pic.number)}"
       ng-click= "artController.expandPicture(pic.number)"
       src="{{pic.src}}">
     <div class="text-center fixed-bottom picInfo" ng-if="artController.galleryMode && artController.returnSelected(pic.number)">
       <h2 class="font-weight-light">{{pic.title}}, {{pic.materials}}</h2>
+    </div>
     </div>
   </div>
 
