@@ -1,10 +1,23 @@
 .aboutInfoBlock{
 
-height: calc(430px + 7vw);
+
+.videoWrap{
+float: left;
+  height: 50%;
+  width: 50%;
+  margin: 20px 20px 5px 20px;
+  iframe{
+  width: 100%;
+  }
+
+}
+height: calc(430px + 7vw + 12vh);
 padding-left: calc(0px + 5vw);
 padding-right: calc(0px + 5vw);
 margin-bottom: calc(20px + 5vw);
 .aboutInfoHeader{
+position: relative;
+left: 100;
 padding: 5px;
 height: calc(50px + 18vw);
 width: 100%;
@@ -56,13 +69,22 @@ background-color: white;
 border-right: solid white;
 }
 .aboutInfoText{
+
 color: MidnightBlue;
 font-family: 'Lato', sans-serif;
 font-size: calc(13px + 1vw);
+padding-left: 20px;
+margin-bottom: 0px;
+
+}
+.aboutInfoTextBlock{
+background-color: #D1F2EB;
+padding-bottom: 30px;
 }
 .aboutInfoTextTitle{
 color: MidnightBlue;
 padding-left:0px;
+margin-bottom: 40px;
 font-size: calc(20px + 5vw);
 font-family: 'Karla', sans-serif;
 }

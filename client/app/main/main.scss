@@ -2,7 +2,7 @@ main{
 .hero-unit{
 position: relative;
 margin-bottom: 20px;
-min-height: calc(160px + 10vw);
+min-height: calc(160px + 8vw + 8vh);
 p{
 color: MidnightBlue	;
 }
@@ -48,9 +48,9 @@ background-image: radial-gradient(circle at 0%, #D1F2EB 70%, #76D7C4);
 
 .info-card{
 img{
-margin-bottom: 10px;
+margin-bottom: 5px;
 padding: 0px;
-height: calc(25px + 15vw);
+height: calc(25px + 8vw + 8vh);
 object-fit: cover;
 }
 
@@ -78,8 +78,6 @@ border-radius: 0px 0px 5px 5px;
 }
 
 
-
-
 }
 #mainNavbar{
 margin-bottom: 0px;
@@ -96,7 +94,7 @@ margin-bottom: 0px;
   .info{
     img{
       animation: hoverAnimation .5s;
-      height: calc(40px + 15vw);
+      height: calc(40px + 8vw + 8vh);
     }
     p{
       animation: hoverPadding .5s, backgroundLighten .5s;
@@ -115,7 +113,7 @@ margin-bottom: 0px;
   .info{
     img{
       animation: leftAnimation .5s ease-out;
-      height: calc(25px + 15vw);
+      height: calc(25px + 8vw + 8vh);
     }
     p{
           animation: leftPadding .5s, backgroundDarken .5s ease-out;
@@ -125,7 +123,7 @@ margin-bottom: 0px;
   }
 }
 .background2{
-min-height: calc(160px + 10vw);
+min-height: calc(160px + 8vw + 8vh);
 background-image: linear-gradient(to bottom right, #D2B4DE, PaleTurquoise	);
 background-repeat: no-repeat;
 background-size: cover;
@@ -137,14 +135,14 @@ animation-iteration-count: infinite;
 #heroText{
 left: 2%;
 right: 2%;
-top: 0;
+top: 10%;
 position: absolute;
 opacity: 1;
 }
 }
 @keyframes hoverAnimation {
-  from { height: calc(25px + 15vw);}
-  to   { height: calc(40px + 15vw);}
+  from { height: calc(25px + 8vw + 8vh);}
+  to   { height: calc(40px + 8vw + 8vh);}
 }
 @keyframes hoverPadding {
   from { padding: 10px;}
@@ -156,8 +154,8 @@ opacity: 1;
 }
 
 @keyframes leftAnimation {
-  from { height: calc(40px + 15vw);}
-  to   { height: calc(25px + 15vw);}
+  from { height: calc(40px + 8vw + 8vh);}
+  to   { height: calc(25px + 8vw + 8vh);}
 }
 
 @keyframes constantHeader{

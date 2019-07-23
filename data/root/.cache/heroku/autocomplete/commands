@@ -1,17 +1,3 @@
-addons --all --json --app --remote
-addons:attach --as --credential --confirm --app --remote
-addons:create --name --as --confirm --wait --app --remote
-addons:destroy --force --confirm --app --remote
-addons:detach --app --remote
-addons:docs --show-url --app --remote
-addons:downgrade --app --remote
-addons:info --app --remote
-addons:open --show-url --app --remote
-addons:plans --json
-addons:rename --app --remote
-addons:services --json
-addons:upgrade --app --remote
-addons:wait --wait-interval --app --remote
 apps --all --json --space --personal --team
 apps:create --addons --buildpack --no-remote --remote --stack --space --region --ssh-git --json --team
 apps:destroy --confirm --app --remote
@@ -64,6 +50,20 @@ releases --num --json --app --remote
 releases:info --json --shell --app --remote
 releases:output --app --remote
 releases:rollback --app --remote
+addons --all --json --app --remote
+addons:attach --as --credential --confirm --app --remote
+addons:create --name --as --confirm --wait --app --remote
+addons:destroy --force --confirm --app --remote
+addons:detach --app --remote
+addons:docs --show-url --app --remote
+addons:downgrade --app --remote
+addons:info --app --remote
+addons:open --show-url --app --remote
+addons:plans --json
+addons:rename --app --remote
+addons:services --json
+addons:upgrade --app --remote
+addons:wait --wait-interval --app --remote
 auth:2fa 
 auth:2fa:disable 
 auth:2fa:generate-recovery-codes 

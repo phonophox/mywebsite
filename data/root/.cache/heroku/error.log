@@ -25,3 +25,115 @@
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
 2019/05/21 02:19:31 {"id":"addon_error","message":"An error was encountered when contacting the add-on partner to create mongolab:sandbox: We are unable to add the mLab addon to your app at this time, and have been alerted. Please email support@mlab.com for assistance."}
+2019-07-07T20:38:56.838Z Warning: Cannot open browser. Go to https://cli-auth.heroku.com/auth/browser/c9e32ec5-8380-48e1-92b5-f5a59c7eeafd to finish login or run heroku login --interactive
+2019-07-07T20:38:56.838Z
+2019-07-07T20:38:56.838Z     at Object.warn (/usr/local/lib/node_modules/heroku/node_modules/@oclif/errors/lib/index.js:33:15)
+2019-07-07T20:38:56.838Z     at showUrl (/usr/local/lib/node_modules/heroku/node_modules/@heroku-cli/command/lib/login.js:132:34)
+2019-07-07T20:38:56.838Z     at ChildProcess.cp.on.code (/usr/local/lib/node_modules/heroku/node_modules/@heroku-cli/command/lib/login.js:145:17)
+2019-07-07T20:38:56.838Z     at emitTwo (events.js:126:13)
+2019-07-07T20:38:56.838Z     at ChildProcess.emit (events.js:214:7)
+2019-07-07T20:38:56.838Z     at maybeClose (internal/child_process.js:915:16)
+2019-07-07T20:38:56.838Z     at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
+2019-07-07T20:40:17.107Z SyntaxError: Unexpected end of JSON input
+2019-07-07T20:40:17.107Z     at JSON.parse (<anonymous>)
+2019-07-07T20:40:17.107Z     at HTTP._parse (/usr/local/lib/node_modules/heroku/node_modules/http-call/lib/http.js:342:30)
+2019-07-07T20:40:17.107Z     at <anonymous>
+2019/07/07 20:40:17 Error: Command failed: heroku login
+    at checkExecSyncError (child_process.js:607:13)
+    at Object.execSync (child_process.js:647:13)
+    at relogin (/usr/local/lib/node_modules/heroku/node_modules/heroku-cli-util/lib/command.js:123:28)
+    at /usr/local/lib/node_modules/heroku/node_modules/heroku-cli-util/lib/command.js:162:18
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2019-07-07T20:40:37.456Z Warning: Cannot open browser. Go to https://cli-auth.heroku.com/auth/browser/8e368997-d61c-46f9-bb83-acd7e03050e0 to finish login or run heroku login --interactive
+2019-07-07T20:40:37.456Z
+2019-07-07T20:40:37.456Z     at Object.warn (/usr/local/lib/node_modules/heroku/node_modules/@oclif/errors/lib/index.js:33:15)
+2019-07-07T20:40:37.456Z     at showUrl (/usr/local/lib/node_modules/heroku/node_modules/@heroku-cli/command/lib/login.js:132:34)
+2019-07-07T20:40:37.456Z     at ChildProcess.cp.on.code (/usr/local/lib/node_modules/heroku/node_modules/@heroku-cli/command/lib/login.js:145:17)
+2019-07-07T20:40:37.456Z     at emitTwo (events.js:126:13)
+2019-07-07T20:40:37.456Z     at ChildProcess.emit (events.js:214:7)
+2019-07-07T20:40:37.456Z     at maybeClose (internal/child_process.js:915:16)
+2019-07-07T20:40:37.456Z     at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
+2019-07-07T20:41:57.863Z SyntaxError: Unexpected end of JSON input
+2019-07-07T20:41:57.863Z     at JSON.parse (<anonymous>)
+2019-07-07T20:41:57.863Z     at HTTP._parse (/usr/local/lib/node_modules/heroku/node_modules/http-call/lib/http.js:342:30)
+2019-07-07T20:41:57.863Z     at <anonymous>
+2019/07/07 20:41:57 Error: Command failed: heroku login
+    at checkExecSyncError (child_process.js:607:13)
+    at Object.execSync (child_process.js:647:13)
+    at relogin (/usr/local/lib/node_modules/heroku/node_modules/heroku-cli-util/lib/command.js:123:28)
+    at /usr/local/lib/node_modules/heroku/node_modules/heroku-cli-util/lib/command.js:162:18
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2019-07-07T20:44:15.668Z Warning: Cannot open browser. Go to https://cli-auth.heroku.com/auth/browser/9a23edf7-ef42-4b4f-a924-740f1971c5f5 to finish login or run heroku login --interactive
+2019-07-07T20:44:15.668Z
+2019-07-07T20:44:15.668Z     at Object.warn (/usr/local/lib/node_modules/heroku/node_modules/@oclif/errors/lib/index.js:33:15)
+2019-07-07T20:44:15.668Z     at showUrl (/usr/local/lib/node_modules/heroku/node_modules/@heroku-cli/command/lib/login.js:132:34)
+2019-07-07T20:44:15.668Z     at ChildProcess.cp.on.code (/usr/local/lib/node_modules/heroku/node_modules/@heroku-cli/command/lib/login.js:145:17)
+2019-07-07T20:44:15.668Z     at emitTwo (events.js:126:13)
+2019-07-07T20:44:15.668Z     at ChildProcess.emit (events.js:214:7)
+2019-07-07T20:44:15.668Z     at maybeClose (internal/child_process.js:915:16)
+2019-07-07T20:44:15.668Z     at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
+2019-07-07T21:11:40.219Z Warning: host is not a heroku command.
+2019-07-07T21:11:40.219Z     at Object.warn (/usr/local/lib/node_modules/heroku/node_modules/@oclif/errors/lib/index.js:33:15)
+2019-07-07T21:11:40.219Z     at Object.warn (/usr/local/lib/node_modules/heroku/node_modules/@oclif/config/lib/config.js:115:42)
+2019-07-07T21:11:40.219Z     at Object.hook (/usr/local/lib/node_modules/heroku/node_modules/@oclif/plugin-not-found/lib/index.js:25:10)
+2019-07-07T21:11:40.219Z     at <anonymous>
+2019-07-07T21:11:45.120Z Error: Run heroku help for a list of available commands.
+2019-07-07T21:11:45.120Z     at Object.error (/usr/local/lib/node_modules/heroku/node_modules/@oclif/errors/lib/index.js:22:17)
+2019-07-07T21:11:45.120Z     at Object.error (/usr/local/lib/node_modules/heroku/node_modules/@oclif/config/lib/config.js:113:30)
+2019-07-07T21:11:45.120Z     at Object.hook (/usr/local/lib/node_modules/heroku/node_modules/@oclif/plugin-not-found/lib/index.js:39:10)
+2019-07-07T21:11:45.120Z     at <anonymous>
+2019-07-07T22:12:23.160Z Warning: update with: "npm update -g heroku"
+2019-07-07T22:12:23.161Z     at Object.warn (/usr/local/lib/node_modules/heroku/node_modules/@oclif/errors/lib/index.js:33:15)
+2019-07-07T22:12:23.161Z     at UpdateCommand.warn (/usr/local/lib/node_modules/heroku/node_modules/@oclif/command/lib/command.js:40:26)
+2019-07-07T22:12:23.161Z     at UpdateCommand.skipUpdate (/usr/local/lib/node_modules/heroku/node_modules/@oclif/plugin-update/lib/commands/update.js:111:22)
+2019-07-07T22:12:23.161Z     at UpdateCommand.run (/usr/local/lib/node_modules/heroku/node_modules/@oclif/plugin-update/lib/commands/update.js:27:33)
+2019-07-07T22:12:23.161Z     at <anonymous>
+2019-07-07T22:12:23.161Z     at process._tickCallback (internal/process/next_tick.js:189:7)
+2019/07/08 18:45:08 Error: Expected response to be successful, got 403
+    at Request.handleFailure [as _handleFailure] (/usr/local/lib/node_modules/heroku/node_modules/heroku-client/lib/request.js:254:11)
+    at Request.<anonymous> (/usr/local/lib/node_modules/heroku/node_modules/heroku-cli-util/lib/command.js:56:12)
+    at concat.then (/usr/local/lib/node_modules/heroku/node_modules/heroku-client/lib/request.js:148:16)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2019/07/08 18:45:08 {"id":"forbidden","message":"You do not have permission to view domains on mywebsite. You need to have the view permission on this app."}
+2019-07-08T18:54:10.928Z Warning: Cannot open browser. Go to https://cli-auth.heroku.com/auth/browser/ba1702da-45d2-4934-be92-3b93af00f08d to finish login or run heroku login --interactive
+2019-07-08T18:54:10.928Z
+2019-07-08T18:54:10.928Z     at Object.warn (/usr/local/lib/node_modules/heroku/node_modules/@oclif/errors/lib/index.js:33:15)
+2019-07-08T18:54:10.928Z     at showUrl (/usr/local/lib/node_modules/heroku/node_modules/@heroku-cli/command/lib/login.js:132:34)
+2019-07-08T18:54:10.928Z     at ChildProcess.cp.on.code (/usr/local/lib/node_modules/heroku/node_modules/@heroku-cli/command/lib/login.js:145:17)
+2019-07-08T18:54:10.928Z     at emitTwo (events.js:126:13)
+2019-07-08T18:54:10.928Z     at ChildProcess.emit (events.js:214:7)
+2019-07-08T18:54:10.928Z     at maybeClose (internal/child_process.js:915:16)
+2019-07-08T18:54:10.928Z     at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
+2019/07/08 18:54:36 Error: Expected response to be successful, got 403
+    at Request.handleFailure [as _handleFailure] (/usr/local/lib/node_modules/heroku/node_modules/heroku-client/lib/request.js:254:11)
+    at Request.<anonymous> (/usr/local/lib/node_modules/heroku/node_modules/heroku-cli-util/lib/command.js:56:12)
+    at concat.then (/usr/local/lib/node_modules/heroku/node_modules/heroku-client/lib/request.js:148:16)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2019/07/08 18:54:36 {"id":"forbidden","message":"You do not have permission to view domains on mywebsite. You need to have the view permission on this app."}
+2019-07-08T18:56:22.774Z Error: Unexpected argument: mywebsite
+2019-07-08T18:56:22.774Z See more help with --help
+2019-07-08T18:56:22.774Z     at validateArgs (/usr/local/lib/node_modules/heroku/node_modules/@oclif/parser/lib/validate.js:10:19)
+2019-07-08T18:56:22.774Z     at Object.validate (/usr/local/lib/node_modules/heroku/node_modules/@oclif/parser/lib/validate.js:52:5)
+2019-07-08T18:56:22.774Z     at Object.parse (/usr/local/lib/node_modules/heroku/node_modules/@oclif/parser/lib/index.js:26:7)
+2019-07-08T18:56:22.774Z     at V5.parse (/usr/local/lib/node_modules/heroku/node_modules/@oclif/command/lib/command.js:68:41)
+2019-07-08T18:56:22.774Z     at V5.run (/usr/local/lib/node_modules/heroku/node_modules/@oclif/plugin-legacy/lib/index.js:90:52)
+2019-07-08T18:56:22.774Z     at V5._run (/usr/local/lib/node_modules/heroku/node_modules/@oclif/command/lib/command.js:29:31)
+2019-07-08T18:56:22.774Z     at <anonymous>
+2019/07/08 18:56:30 Error: Expected response to be successful, got 403
+    at Request.handleFailure [as _handleFailure] (/usr/local/lib/node_modules/heroku/node_modules/heroku-client/lib/request.js:254:11)
+    at Request.<anonymous> (/usr/local/lib/node_modules/heroku/node_modules/heroku-cli-util/lib/command.js:56:12)
+    at concat.then (/usr/local/lib/node_modules/heroku/node_modules/heroku-client/lib/request.js:148:16)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2019/07/08 18:56:30 {"id":"forbidden","message":"You do not have permission to view domains on mywebsite. You need to have the view permission on this app."}
+2019/07/10 18:11:01 Error: Expected response to be successful, got 422
+    at Request.handleFailure [as _handleFailure] (/usr/local/lib/node_modules/heroku/node_modules/heroku-client/lib/request.js:254:11)
+    at Request.<anonymous> (/usr/local/lib/node_modules/heroku/node_modules/heroku-cli-util/lib/command.js:56:12)
+    at concat.then (/usr/local/lib/node_modules/heroku/node_modules/heroku-client/lib/request.js:148:16)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2019/07/10 18:11:01 {"id":"invalid_params","message":"Domain already added to this app."}

@@ -4,11 +4,22 @@
   <p id="artWelcome" class="text-center font-weight-light">Welcome to the Nelson Gallery.</p>
   <p class="artMessage text-center font-weight-light">Below is a collection of my work. Click on an image to expand it for more information. Click on it again to exit gallery mode.</p>
 </div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <div  class="artTab col-lg-6 col-md-6 col-sm-6 col-xs-6">
+    <div ng-click="artController.toggleTab(0)"  ng-class= "{'selectedTab':artController.toggle==0}" class="tabBackground">
+    <h1>Digital</h1>
+    </div>
+  </div>
+  <div class="artTab col-lg-6 col-md-6 col-sm-6 col-xs-6">
+    <div ng-click="artController.toggleTab(1)" ng-class= "{'selectedTab':artController.toggle==1}" class="tabBackground">
+    <h1>Physical</h1>
+    </div>
+  </div>
+</div>
 
-<div class="artBoard col-lg-12 col-md-12 col-sm-12 col-xs-12">
-  <h1 class="text-center font-weight-light artSectionTitle">Digital</h1>
-  <hr class="artSectionBreak">
-  <div ng-repeat="pic in artController.pics2" class=" col-lg-6 col-md-6 col-sm-6 col-xs-6" >
+<div class="artBoard col-lg-12 col-md-12 col-sm-12 col-xs-12" ng-if="!artController.toggle">
+
+  <div ng-repeat="pic in artController.pics2"  class=" col-lg-6 col-md-6 col-sm-6 col-xs-6" >
   <img class="notExpanded w-100"
        ng-class= "{'fixed-top expandedPic':artController.returnSelected(pic.number), 'notExpanded': !artController.returnSelected(pic.number)}"
        ng-click= "artController.expandPicture(pic.number)"
@@ -29,10 +40,12 @@
   <div class="text-center fixed-bottom picInfo" ng-if="artController.galleryMode && artController.returnSelected(15)">
     <h2 class="font-weight-light">Icon Designs, Digital, Illustrator</h2>
   </div>
+    <div class="spacer"></div>
+
 </div>
-<div ngController="ArtController" class="artBoard col-lg-12 col-md-12 col-sm-12 col-xs-12">
-  <h1 class="text-center font-weight-light artSectionTitle">Physical</h1>
-  <hr>
+
+<div ngController="ArtController" ng-if="artController.toggle" class="artBoard col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
   <div ng-repeat="pic in artController.pics" class="picture col-lg-3 col-md-4 col-sm-6 col-xs-12" >
     <div class="hoverContainer" ng-class="{'leftElement': artController.visited[pic.number]&&!artController.hovered[pic.number], 'hovered-element': artController.hovered[pic.number]}" ng-mouseenter="artController.hover(pic.number)" ng-mouseleave="artController.noHover(pic.number)">
 
@@ -47,11 +60,13 @@
   </div>
 
 </div>
+  <div class="spacer"></div>
+
 <div class=" blackBackground fixed-top" ng-if="artController.galleryMode">
 
 </div>
 <div class="customFooter sticky-bottom">
   <div>
-    <footer class="footer-block"><p>Isaac Nelson, last updated: May 20th 2019, https://github.com/phonophox/mywebsite</p></footer>
+    <footer class="footer-block"><p>Isaac Nelson, last updated: July 8th 2019, https://github.com/phonophox/mywebsite</p></footer>
   </div>
 </div>

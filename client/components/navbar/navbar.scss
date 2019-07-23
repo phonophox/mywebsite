@@ -1,17 +1,23 @@
 .navbar-logo {
-  height: 60px;
+  height: calc(60px + 10vw + 10vh);
 }
 .navbar{
 margin-bottom: 0px;
+img{
+margin-top: 5px;
+height: calc(30px + .5vw + .5vh);
 }
-nav{
-margin-bottom: 0px;
 a{
-
-font-size: large;
+margin-top: 5px;
+font-size: calc(8px + .5vw + .8vh);
 font-family: 'Karla', sans-serif;
 
 }
+
+}
+nav{
+margin-bottom: 0px;
+
 }
 
 

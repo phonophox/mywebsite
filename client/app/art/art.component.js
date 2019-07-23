@@ -8,6 +8,7 @@ export class ArtController {
   constructor($http) {
     this.$http = $http;
     this.load = false;
+    this.toggle=0;
         this.hovered = [false,false,false,false,false,false,false,false,false,false,false,false];
         this.visited = [false,false,false,false,false,false,false,false,false,false,false,false];
     this.galleryMode = false;
@@ -45,6 +46,9 @@ export class ArtController {
    }
   noHover(value){
       this.hovered[value]=false;
+  }
+  toggleTab(value){
+  this.toggle=value;
   }
   $onInit() {
   this.load = true;
